@@ -1,7 +1,7 @@
 import PageContainer from './layouts/PageContainer'
 import Header from './layouts/Header'
-import Home from './pages/Home'
-import VideoDetail from './pages/VideoDetail'
+import Home from './pages/home/Home'
+import VideoDetail from './pages/watch/VideoDetail'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 function App() {
   return (
