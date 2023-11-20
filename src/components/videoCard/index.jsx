@@ -1,5 +1,6 @@
 import React from 'react'
 import './style.scss'
+
 const VideoCard = ({ thumbnail, title, author }) => {
   return (
     <div className="card">

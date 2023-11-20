@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { getVideos } from '../../services/videoServices'
 import VideoCard from '../../components/videoCard'
+import './style.scss'
+import { Link } from 'react-router-dom'
 const Home = () => {
   const [videos, setVideos] = useState([])
-  console.log(videos)
+
   useEffect(() => {
     // Fetch a list of videos
     getVideos('your search query')
@@ -16,15 +18,15 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
+    <div className="home">
       {videos.map((item, index) => (
-        <VideoCard
-          key={index}
-          thumbnail={item.snippet.thumbnails.high.url}
-          title={item.snippet.description}
-          author={item.snippet.channelTitle}
-          // date={item.snippet.publishedAt}
-        />
+        <Link key={index} to={`/${item.id.videoId}`} className="video-link">
+          <VideoCard
+            thumbnail={item.snippet.thumbnails.high.url}
+            title={item.snippet.description}
+            author={item.snippet.channelTitle}
+          />
+        </Link>
       ))}
     </div>
   )

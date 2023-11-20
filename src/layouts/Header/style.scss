@@ -1,14 +1,19 @@
 @use '../../styles'as *;
 
 .header {
+    position: fixed;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 
     &__left {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-left: 20px;
 
         &__menu {
             padding: 8px;
@@ -23,8 +28,7 @@
 
     &__right {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-right: 20px;
 
         &__stream {
             padding: 8px;
