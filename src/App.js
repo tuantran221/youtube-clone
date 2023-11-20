@@ -11,7 +11,7 @@ function App() {
         <PageContainer>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/video" element={<VideoDetail />} />
+            <Route path="/:videoId" element={<VideoDetail />} />
           </Routes>
         </PageContainer>
       </Router>
