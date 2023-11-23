@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { getVideos } from '../../services/videoServices'
+import React from 'react'
 import VideoCard from '../../components/videoCard'
 import './style.scss'
 import { Link } from 'react-router-dom'
+import { useVideoContext } from '../../context/videoProvider'
 const Home = () => {
-  const [videos, setVideos] = useState([])
-
-  useEffect(() => {
-    // Fetch a list of videos
-    getVideos('your search query')
-      .then((items) => {
-        setVideos(items)
-      })
-      .catch((error) => {
-        console.error('Error fetching videos:', error)
-      })
-  }, [])
+  const { videos } = useVideoContext()
 
   return (
     <div className="home">
       {videos.map((item, index) => (
-        <Link key={index} to={`/${item.id.videoId}`} className="video-link">
+        <Link key={index} to={`/${item.id.videoId}`} className="home__link">
           <VideoCard
             thumbnail={item.snippet.thumbnails.high.url}
-            title={item.snippet.description}
+            title={item.snippet.title}
             author={item.snippet.channelTitle}
           />
         </Link>

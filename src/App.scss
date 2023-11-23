@@ -1,0 +1,10 @@
+@use './styles/'as *;
+
+html,
+body {
+    margin: 0;
+}
+
+.App {
+    box-sizing: border-box;
+}
