@@ -5,6 +5,7 @@ import menu from '../../assets/icons/menu.svg'
 import profile from '../../assets/icons/profile.jpg'
 import stream from '../../assets/icons/stream.svg'
 import notifi from '../../assets/icons/notification.svg'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className="header">
@@ -14,7 +15,9 @@ const Header = () => {
         </div>
 
         <div className="header__left__logo">
-          <img src={logo} alt="logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
       </div>
       <div className="header__right">

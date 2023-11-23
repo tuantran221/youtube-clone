@@ -3,7 +3,13 @@
 .home {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 30px;
+    // column-gap: 20px;
+    justify-items: center;
+    padding: 0 50px;
+
+    &__link {
+        text-decoration: none;
+    }
 
 }
