@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getVideos } from '../../services/videoServices'
 import VideoCard from '../videoCard'
-import { Link } from 'react-router-dom'
 import './style.scss'
 const RealatedVideos = () => {
   const [videos, setVideos] = useState([])
