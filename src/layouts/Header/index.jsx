@@ -1,11 +1,11 @@
 import React from 'react'
-import './style.scss'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/icons/logo.svg'
 import menu from '../../assets/icons/menu.svg'
 import profile from '../../assets/icons/profile.jpg'
 import stream from '../../assets/icons/stream.svg'
 import notifi from '../../assets/icons/notification.svg'
-import { Link } from 'react-router-dom'
+import './style.scss'
 const Header = () => {
   return (
     <div className="header">

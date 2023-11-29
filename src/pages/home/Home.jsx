@@ -1,8 +1,8 @@
 import React from 'react'
-import VideoCard from '../../components/videoCard'
-import './style.scss'
 import { Link } from 'react-router-dom'
+import VideoCard from '../../components/videoCard'
 import { useVideoContext } from '../../context/videoProvider'
+import './style.scss'
 const Home = () => {
   const { videos } = useVideoContext()
 

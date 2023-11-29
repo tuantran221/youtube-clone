@@ -1,8 +1,10 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import './style.scss'
+
 import RealatedVideos from '../../components/relatedVideo'
 import { useVideoContext } from '../../context/videoProvider'
+import './style.scss'
+
 const VideoDetail = () => {
   const id = useParams()
   const { videos } = useVideoContext()
