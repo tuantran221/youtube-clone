@@ -2,7 +2,6 @@
   "name": "youtube-clone",
   "version": "0.1.0",
   "public": true,
-  "homepage": "https://tuantran221.github.io/youtube-clone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -22,9 +21,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -49,7 +46,6 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
-    "gh-pages": "^6.1.0",
     "prettier": "^3.1.0"
   }
 }
